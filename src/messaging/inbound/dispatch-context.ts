@@ -102,6 +102,12 @@ export function buildDispatchContext(params: {
     },
   });
 
+  // ---- Custom session key override ----
+  // When sessionKey is set, all conversations (groups + DMs) share the specified session key.
+  if (account.config?.sessionKey) {
+    route.sessionKey = account.config.sessionKey;
+  }
+
   // ---- System event ----
   const sender = ctx.senderName ? `${ctx.senderName} (${ctx.senderId})` : ctx.senderId;
   const location = isGroup ? `group ${ctx.chatId}` : 'DM';
