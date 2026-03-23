@@ -1,5 +1,5 @@
 {
-  "name": "@larksuite/openclaw-lark",
+  "name": "@yarmu/openclaw-lark",
   "version": "2026.3.17",
   "description": "OpenClaw Lark/Feishu channel plugin",
   "type": "module",
@@ -59,7 +59,7 @@
       "quickstartAllowFrom": true
     },
     "install": {
-      "npmSpec": "@larksuite/openclaw-lark",
+      "npmSpec": "@yarmu/openclaw-lark",
       "localPath": "extensions/feishu",
       "defaultChoice": "npm"
     }
